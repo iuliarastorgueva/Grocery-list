@@ -28,7 +28,7 @@ export class GroceryList extends Component {
         this.setState({groceryList: listArray})
     }
 
-    crossedWord(event) {gi
+    crossedWord(event) {
         const li = event.target;
         li.classList.toggle('crossed');
     }
@@ -58,7 +58,7 @@ export class GroceryList extends Component {
             ))} 
             </ul>
             <div className="container">
-                <button onClick={() => this.state.deleteItem()} className="btn delete">Delete</button>
+                <button onClick={() => this.deleteItem()} className="btn delete">Delete</button>
             </div>
             </form>
             </div>
